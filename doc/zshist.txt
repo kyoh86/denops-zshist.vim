@@ -1,0 +1,16 @@
+*zshist.txt* A Vim plugin to read/write zsh history files
+                                                  *zshist* *denops-zshist.txt*
+
+Author: kyoh86 <me@kyoh86.dev>
+License: MIT License
+
+This plugin is a Denops plugin to read/write zsh history files.
+It has no commands, no options.
+It will allow you to read and write zsh history files in Vim/Neovim safely.
+
+You need to install |denops.vim| as a dependency.
+
+* vim-denops/denops.vim https://github.com/vim-denops/denops.vim
+
+==============================================================================
+" vim:tw=78:nosi:sts=4:ts=4:sw=4:et:ft=help:norl:

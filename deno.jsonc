@@ -1,14 +1,14 @@
 {
-  "name": "denops-boilerplate.vim",
+  "name": "denops-zshist.vim",
   "version": "0.0.0",
   "exports": {
     "./dummy_test.ts": "./dummy_test.ts",
     "./init.ts": "./init.ts",
-    "./denops/boilerplate/main.ts": "./denops/boilerplate/main.ts",
-    "./denops/boilerplate/mod.ts": "./denops/boilerplate/mod.ts",
-    "./denops/boilerplate/types.ts": "./denops/boilerplate/types.ts"
+    "./denops/zshist/main.ts": "./denops/zshist/main.ts",
+    "./denops/zshist/mod.ts": "./denops/zshist/mod.ts",
+    "./denops/zshist/types.ts": "./denops/zshist/types.ts"
   },
-  "description": "Superpractilisticexpermientocious",
+  "description": "A Vim/Neovim plugin to read/write .zsh_history file safely",
   "tasks": {
     "update": "deno run --allow-env --allow-read --allow-write --allow-net --allow-run=git,deno jsr:@molt/cli --write ./**/*.ts",
     "fmt": "deno fmt",

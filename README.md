@@ -1,17 +1,14 @@
-# denops-boilerplate.vim
+# denops-zshist.vim
 
-Superpractilisticexpermientocious.
+A Vim/Neovim plugin to read/write .zsh_history file safely
 
-## Usage
-
-1. Fork this repository to `denops-xxx.vim`
-1. Call `init.ts --name hogehoge --description fugafuga` to replace names in the
-   repository
-1. Delete this section from README.md
+This plugin is a Denops plugin to read/write zsh history files.
+It has no commands, no options.
+It will allow you to read and write zsh history files in Vim/Neovim safely.
 
 ## doc
 
-[./doc/boilerplate.txt](./doc/boilerplate.txt)
+[./doc/zshist.txt](./doc/zshist.txt)
 
 # License
 
