@@ -50,4 +50,4 @@ async function write(filepath: string, content: string): Promise<void> {
   await Deno.writeFile(filepath, data);
 }
 
-export { metafy, unmetafy, read, write};
+export { metafy, read, unmetafy, write };
