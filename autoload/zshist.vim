@@ -3,7 +3,7 @@ function! zshist#read() abort
   setlocal buftype=acwrite filetype=zsh_history.zsh
   let l:filepath = expand('%:p')
   let l:buffer = bufnr()
-  call denops#notify('zshist', 'read', [l:filepath, l:bufnr])
+  call denops#notify('zshist', 'read', [l:filepath, l:buffer])
   set nomodified
 endfunction
 
