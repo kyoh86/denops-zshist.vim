@@ -1,19 +1,19 @@
+// $schema: https://raw.githubusercontent.com/denoland/deno/refs/heads/main/cli/schemas/config-file.v1.json
 {
   "name": "denops-zshist.vim",
   "version": "0.0.0",
+  "description": "A Vim/Neovim plugin to read/write .zsh_history file safely",
   "exports": {
     "./dummy_test.ts": "./dummy_test.ts",
     "./denops/zshist/main.ts": "./denops/zshist/main.ts",
     "./denops/zshist/mod.ts": "./denops/zshist/mod.ts",
     "./denops/zshist/types.ts": "./denops/zshist/types.ts"
   },
-  "nodeModulesDir": "auto",
-  "description": "A Vim/Neovim plugin to read/write .zsh_history file safely",
+  "fmt": { "include": ["./**/*.ts", "deno.jsonc"] },
+  "lint": { "include": ["./**/*.ts", "deno.jsonc"] },
+  "test": { "include": ["./**/*_test.ts"] },
   "tasks": {
     "update": "deno outdated --update",
-    "fmt": "deno fmt",
-    "check": "deno check ./**/*.ts",
-    "lint": "deno lint",
     "test": "deno test --check --permit-no-files --allow-env=DENOPS_TEST_CONNECT_TIMEOUT,DENOPS_TEST_DENOPS_PATH,DENOPS_TEST_VERBOSE,DENOPS_TEST_VIM_EXECUTABLE,DENOPS_TEST_NVIM_EXECUTABLE,MSGPACKR_NATIVE_ACCELERATION_DISABLED --allow-run --allow-net=127.0.0.1:0 --allow-read"
   },
   "workspace": [
@@ -24,5 +24,6 @@
     "@denops/std": "jsr:@denops/std@^8.2.0",
     "@denops/test": "jsr:@denops/test@^4.0.0",
     "@std/assert": "jsr:@std/assert@^1.0.16"
-  }
+  },
+  "nodeModulesDir": "auto"
 }
